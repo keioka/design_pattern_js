@@ -1,0 +1,13 @@
+{
+  "name": "design_pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "node": "babel-node",
+    "tsc:watch": "tsc --watch -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^3.2.4"
+  }
+}

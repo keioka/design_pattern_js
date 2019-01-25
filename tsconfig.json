@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "target": "es2015",
+        "watch": true
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "lib": [
+        "ES5",
+        "ES2015"
+    ],
+    "compileOnSave": true
+}
