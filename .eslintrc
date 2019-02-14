@@ -1,0 +1,20 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "rules": {
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": ["warn", {"devDependencies": ["**/webpack.**.js", "test/**.js", "**/jest.config.js"], "optionalDependencies": false, "peerDependencies": false}],
+    "import/no-unresolved": [2, { "ignore": ["@"] }],
+    "global-require": "off",
+    "no-undef": "off",
+    "no-unused-vars": "warn",
+    "object-curly-newline": [2, {
+      "ImportDeclaration": { "multiline": true, "minProperties": 2 }
+    }],
+    "object-property-newline": [2, {
+      "allowAllPropertiesOnSameLine": false
+    }],
+    "newline-before-return" : 2,
+    "comma-dangle": [2, "never"]
+  }
+}

@@ -52,5 +52,5 @@ module.exports = {
     PrototypeManager,
     ComponentParagraph,
     ComponentSpan,
-    ComponentDiv,
+    ComponentDiv
 };

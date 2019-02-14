@@ -1,24 +1,17 @@
-const {
-  PrototypeManager,
-  ComponentParagraph,
-  ComponentSpan,
-  ComponentDiv,
-} = require('./prototype');
+import { PrototypeManager, ComponentParagraph, ComponentSpan, ComponentDiv } from './prototype';
 
-function main() {
-  const p = new ComponentParagraph("p1", "this is paragraph");
-  const div = new ComponentDiv("div", "hello");
-  const span = new ComponentSpan("span", "span");
+(function main(): void {
+  const p = new ComponentParagraph('p1', 'this is paragraph');
+  const div = new ComponentDiv('div', 'hello');
+  const span = new ComponentSpan('span', 'span');
 
-  console.log(p.render())
+  console.log(p.render());
   var prototypeManager = new PrototypeManager();
-  prototypeManager.addPrototype("p", p)
-  prototypeManager.addPrototype("div", div)
-  prototypeManager.addPrototype("span", span)
+  prototypeManager.addPrototype('p', p);
+  prototypeManager.addPrototype('div', div);
+  prototypeManager.addPrototype('span', span);
 
-  const copyElementP = prototypeManager.getPrototype("p");
+  const copyElementP = prototypeManager.getPrototype('p');
 
-  console.log(copyElementP.render())
-}
-
-main();
+  console.log(copyElementP.render());
+})();
